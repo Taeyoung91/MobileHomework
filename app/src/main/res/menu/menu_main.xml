@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/menu">
+
+    <item
+        android:id="@+id/reload"
+        android:title="다시 읽기">
+
+    </item>
+
+    <item
+        android:id="@+id/delete"
+        android:title="일기 삭제">
+
+    </item>
+
+    <item
+        android:id="@+id/fontSize"
+        android:title="글씨 크기">
+
+        <menu>
+            <item
+                android:id="@+id/bigSize"
+                android:title="크게"/>
+            <item
+                android:id="@+id/midSize"
+                android:title="보통"/>
+            <item
+                android:id="@+id/smallSize"
+                android:title="작게"/>
+        </menu>
+    </item>
+
+</menu>
+
