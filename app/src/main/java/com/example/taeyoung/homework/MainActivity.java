@@ -54,6 +54,7 @@ public class MainActivity extends Activity {
         dateTextView = (TextView)findViewById(R.id.dateTextView);// 날짜 부분
         saveBtn = (Button)findViewById(R.id.saveBtn); // 저장 버튼
         editDiary = (EditText)findViewById(R.id.editDiary); // 일기 내용 부분
+        editDiary.setTextSize(20);
 
         dateText = cYear + "년 " + (cMonth + 1) + "월 " + cDay + "일"; // 일기장의
         fileName = cYear + "_" + (cMonth + 1) + "_" + cDay + ".txt";  // 초기화면을
@@ -200,6 +201,7 @@ public class MainActivity extends Activity {
         return false;
     }
 
+    /* 삭제 Dialog 메서드 */
     public void questionDelete(){
 
         AlertDialog.Builder dlg = new AlertDialog.Builder(MainActivity.this);
